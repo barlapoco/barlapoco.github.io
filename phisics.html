@@ -81,7 +81,7 @@
 				</div>
 				<div class="nav-but-wrap">
 					<div class="menu-icon cursor-link">
-						
+
 					</div>
 				</div>
 			</div>
@@ -137,13 +137,14 @@
 					<div class="col-md-8 padding-top-bottom text-center"
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
 						<h4>Gli Intermezzi</h4>
-						<p class="mb-0 pb-0 lead padding-top-bottom">L’idea iniziale era quella di inserire diverse scene d’intermezzo a
+						<p class="mb-0 pb-0 lead padding-top-bottom">L’idea iniziale era quella di inserire diverse
+							scene d’intermezzo a
 							tema fuoco/acqua, sfruttando il forte effetto visivo/emozionale che queste possono
 							suscitare.</br>
 							Purtroppo sin da subito ci siamo accorti che con i nostri computer il lavoro e la fase di
 							calcolo erano molto più lunghe del previsto e causavano frequenti crash.</br>
 							A questo punto abbiamo deciso di concentrarci su 2 scene di intermezzo, una con il fuoco e
-							una con l’acqua.</br>
+							una con l’acqua, per non rinunciare all'utilizzo di simulazioni fisiche.</br>
 							Entrambe volevano essere delle scene in slow motion, quindi le simulazioni sono state
 							programmate per avere una velocità ridotta (0.25 per il fuoco, 0.15 per l’acqua).
 
@@ -157,7 +158,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-12" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
 						<div class="img-wrap">
-							<img src="img/phisics/pozzanghera.jpg" alt="">
+							<img src="img/phisics/pozzanghera.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -168,13 +169,14 @@
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
 						<p class="mb-0 pb-0 lead">
 							La simulazione della pozzanghera è stata quella più onerosa, in quanto abbiamo dovuto
-							inserire il rig del corpo e il corpo come effector (per avere l’acqua che schizzava nel modo
-							giusto), aggiungendo però un effector invisibile che impattasse ad alta velocità per
-							aumentare gli schizzi.</br> Inoltre è stata l’unica scena in cui abbiamo utilizzato il motore di
+							inserire il corpo come effector per generare schizzi realistici, aggiungendo però un
+							effector invisibile che impattasse ad alta velocità per
+							aumentare gli schizzi.</br> Inoltre è stata l’unica scena in cui abbiamo utilizzato il
+							motore di
 							render Cycles, che ci ha permesso di ottenere un’immagine di qualità molto maggiore rispetto
 							a Eevee (soprattutto per quanto riguarda le trasparenze dell’acqua).
 					</div>
-	<div class="col-md-12">
+					<div class="col-md-12">
 						<div class="img-wrap" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
 							<img src="img/phisics/gif-fuoco.gif" alt="">
 						</div>
@@ -182,7 +184,8 @@
 					<div class="section clearfix"></div>
 					<div class="col-md-8 padding-top-bottom text-center"
 						data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-						<p class="mb-0 pb-0 lead">Per la scena con la palla di fuoco ci siamo trovati in difficoltà con
+						<p class="mb-0 pb-0 lead">Per la scena con la palla di fuoco, realizzata anch'essa con il motore
+							di simulazione Mantaflow (modello Fire/Smoke), ci siamo trovati in difficoltà con
 							la fase di render, ma dopo alcuni tentativi siamo riusciti a ottenere un risultato
 							accettabile usando come shader una texture procedurale e renderizzando in Eevee (nonostante
 							i tempi di calcolo non indifferenti, abbiamo risparmiato molto tempo rispetto a cycles,
@@ -196,10 +199,10 @@
 						</div>
 					</div>
 					<div class="col-md-6 padding-top text-center">
-						<a href="postp.html" class="cursor-link animsition-link">
+						<a href="camera.html" class="cursor-link animsition-link">
 							<div class="project-link-wrap">
 								<p>next</p>
-								<h4>Post-Production</h4>
+								<h4>Camera & Rendering</h4>
 							</div>
 						</a>
 					</div>
@@ -211,26 +214,26 @@
 			<div class="container-fluid px-5">
 				<div class="row">
 					<div class="col-md-6 footer text-center text-md-left">
-						<p>Computer Animation 2019/2020</p>	
+						<p>Computer Animation 2019/2020</p>
 					</div>
 					<div class="col-md-6 mt-4 mt-md-0 text-right">
-						
+
 						<p>Beatrice Barlassina, Elia Molteni, Andrea Stefanelli
-							</p>	
-						</div>	
-					</div>	
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	</div>
 
-		<div class="scroll-to-top cursor-link"></div>
+	<div class="scroll-to-top cursor-link"></div>
 
-		<!-- Page cursor
+	<!-- Page cursor
 	================================================== -->
 
-		<div class="cursor cursor-shadow"></div>
-		<div class="cursor cursor-dot"></div>
+	<div class="cursor cursor-shadow"></div>
+	<div class="cursor cursor-dot"></div>
 
 
 	</div>
